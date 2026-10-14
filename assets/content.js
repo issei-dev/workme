@@ -531,3 +531,185 @@ window.WORK_ME_CONTENT = {
     }
   }
 };
+// File: assets/content.js
+
+/*
+ * 追加ページのトップ・一覧掲載データ。
+ * 既存の window.WORK_ME_CONTENT 定義より後に追加してください。
+ *
+ * 詳細ページは個別HTMLへ直接リンクします。
+ * インタビュー未完成の3名は、企画ページであることを明示します。
+ */
+
+(() => {
+  "use strict";
+
+  const content = window.WORK_ME_CONTENT;
+
+  if (!content) {
+    return;
+  }
+
+  const additionalCompanies = [
+    {
+      id: "mirai",
+      href: "company-mirai.html",
+      name: "株式会社ミライヘルスケア",
+      initials: "MH",
+      title: "コードで、医療の現場を楽にする。",
+      description:
+        "電子カルテ、オンライン予約、AI診療支援。医療×ITの仕事と、エンジニアの働く環境を紹介する企画サンプル。",
+      image: "assets/images/mirai-company-hero.jpg",
+      industry: "医療・IT",
+      location: "東京都港区芝浦・架空住所",
+      mission:
+        "多様な立場の視点を生かし、医療の現場を支えるプロダクトを開発する。",
+      culture:
+        "女性エンジニア採用、技術カンファレンス協賛、復職支援を紹介する企画です。",
+      environment:
+        "リモート勤務、復職支援、研修の紹介を予定しています。制度の詳細条件は確認前です。",
+      recruitmentUrl: "",
+      updatedAt: ""
+    },
+    {
+      id: "sakura",
+      href: "company-sakura.html",
+      name: "株式会社さくらロジテック",
+      initials: "SL",
+      title: "届けるのは、荷物だけじゃない。働く人の未来も。",
+      description:
+        "物流センター運営、倉庫管理システム、共同配送。若手女性リーダーと働く環境を紹介する制作サンプル。",
+      image: "assets/images/sakura-center.jpg",
+      industry: "物流・倉庫管理",
+      location: "神奈川県横浜市西区みなとみらい・架空住所",
+      mission:
+        "多様な視点を生かし、物流現場の安全性と生産性を高める。",
+      culture:
+        "現場見学会、育児との両立支援、若手女性リーダー育成に取り組む設定です。",
+      environment:
+        "育児短時間勤務は子が小学3年生を修了するまで利用できる設定です。",
+      recruitmentUrl: "",
+      updatedAt: ""
+    }
+  ];
+
+  const additionalStories = [
+    {
+      id: "satomi",
+      href: "story-satomi.html",
+      category: "people",
+      title:
+        "文系出身、プログラミングは大学の授業が初めて。入社4年目で医療データの設計を任されています",
+      description:
+        "里見そらさん・26歳。研修やメンター制度について聞くインタビュー企画。回答本文は取材前です。",
+      label: "インタビュー企画・取材前",
+      source: "ミライヘルスケア / バックエンドエンジニア",
+      companyId: "mirai",
+      image: "assets/images/satomi-hero.jpg",
+      tags: [
+        "エンジニア",
+        "バックエンド",
+        "医療",
+        "IT",
+        "研修",
+        "キャリア"
+      ],
+      publishedAt: "",
+      updatedAt: "",
+      sections: []
+    },
+    {
+      id: "takanashi",
+      href: "story-takanashi.html",
+      category: "people",
+      title:
+        "育休から復帰して、リード職に。“時短だから無理”は思い込みでした",
+      description:
+        "高梨みなみさん・32歳。復職支援と働き方の実際を聞くインタビュー企画。回答本文は取材前です。",
+      label: "インタビュー企画・取材前",
+      source: "ミライヘルスケア / フロントエンドエンジニア",
+      companyId: "mirai",
+      image: "assets/images/takanashi-hero.jpg",
+      tags: [
+        "エンジニア",
+        "フロントエンド",
+        "育休",
+        "復職",
+        "時短",
+        "リモート",
+        "キャリア"
+      ],
+      publishedAt: "",
+      updatedAt: "",
+      sections: []
+    },
+    {
+      id: "kubota",
+      href: "story-kubota.html",
+      category: "people",
+      title:
+        "元看護師がエンジニアになった。現場を知っているから書けるコードがある",
+      description:
+        "久保田ことはさん・28歳。医療現場の経験と異業種転身について聞く企画。回答本文は取材前です。",
+      label: "インタビュー企画・取材前",
+      source: "ミライヘルスケア / プロダクトエンジニア",
+      companyId: "mirai",
+      image: "assets/images/kubota-hero.jpg",
+      tags: [
+        "エンジニア",
+        "看護師",
+        "医療",
+        "異業種",
+        "転職",
+        "カンファレンス",
+        "キャリア"
+      ],
+      publishedAt: "",
+      updatedAt: "",
+      sections: []
+    },
+    {
+      id: "mizuno",
+      href: "story-mizuno.html",
+      category: "people",
+      title:
+        "“いつか”のライフイベントも、あきらめない。29歳、入社8年目の出荷チームリーダー",
+      description:
+        "水野あかりさんが語る、物流の仕事、リーダーとしての歩み、これからの働き方。架空のインタビュー。",
+      label: "社員インタビュー・制作サンプル",
+      source: "さくらロジテック / 出荷チームリーダー",
+      companyId: "sakura",
+      image: "assets/images/mizuno-hero.jpg",
+      tags: [
+        "物流",
+        "リーダー",
+        "チーム",
+        "育児",
+        "働く環境",
+        "キャリア"
+      ],
+      publishedAt: "",
+      updatedAt: "",
+      sections: []
+    }
+  ];
+
+  function mergeAtFront(currentItems, additions) {
+    const addedIds = new Set(additions.map(item => item.id));
+
+    return [
+      ...additions,
+      ...currentItems.filter(item => !addedIds.has(item.id))
+    ];
+  }
+
+  content.companies = mergeAtFront(
+    content.companies || [],
+    additionalCompanies
+  );
+
+  content.stories = mergeAtFront(
+    content.stories || [],
+    additionalStories
+  );
+})();
