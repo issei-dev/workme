@@ -788,3 +788,48 @@ blockquote footer {
     scroll-behavior: auto;
   }
 }
+/* File: assets/styles.css */
+
+/*
+ * 正方形広告の表示修正。
+ * このブロックをファイルの末尾に追加してください。
+ */
+
+.ad-rail {
+  min-width: 0;
+}
+
+.ad-rail .ad-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: var(--soft, #f5f8f9);
+}
+
+.ad-rail .ad-link .ad-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 760px) {
+  .ad-rail {
+    position: static;
+    width: min(220px, 100%);
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
