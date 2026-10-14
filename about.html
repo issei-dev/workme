@@ -5,17 +5,763 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="WORK & MEの運営会社と事業内容について。">
-  <title>運営会社｜WORK & ME</title>
+  <meta name="theme-color" content="#7B5EA7">
+  <meta
+    name="description"
+    content="WORK & MEの運営会社、株式会社ルピナスの企業理念・会社概要・事業・沿革を紹介する架空の企業設定ページ。"
+  >
+  <title>運営会社・株式会社ルピナス｜WORK & ME</title>
+
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/corporate.css">
+
   <script src="assets/content.js" defer></script>
-  <script src="assets/app.js" defer></script>
+  <script src="assets/corporate.js" defer></script>
 </head>
-<body data-page="about">
-  <div id="app"></div>
+
+<body class="corporate-page" data-corporate-page="about">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        WORK <span>&</span> ME
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        メニュー
+      </button>
+
+      <nav
+        class="navigation"
+        id="navigation"
+        aria-label="メインメニュー"
+      >
+        <a href="people.html">人を知る</a>
+        <a href="work.html">働き方を知る</a>
+        <a href="companies.html">会社を知る</a>
+        <a href="lifestyle.html">自分を楽しむ</a>
+        <a href="editorial.html">編集部</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-layout">
+    <main id="main" tabindex="-1">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <a href="index.html">トップ</a>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">運営会社</span>
+      </nav>
+
+      <header class="corporate-hero">
+        <p class="eyebrow">ABOUT LUPINUS</p>
+        <h1>株式会社ルピナス</h1>
+        <p class="corporate-english">Lupinus Inc.</p>
+        <p class="corporate-lead">
+          はたらく女性の「いつも幸せ」を、<br class="desktop-break">
+          地域の企業とともにつくる。
+        </p>
+
+        <div class="corporate-signature">
+          <span class="lupinus-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+
+          <div>
+            <strong>LUPINUS</strong>
+            <span>Women's Career Infrastructure Company</span>
+          </div>
+        </div>
+      </header>
+
+      <aside class="fiction-notice" aria-label="架空の企業設定について">
+        <strong>架空の企業設定ページ</strong>
+        <p>
+          本ページに記載する企業・人物・サービス・数値・所在地・
+          上場情報・許認可・加盟・認定は、すべて創作上の設定です。
+          実在する企業の情報や、実際の許認可・認定の取得を示すものではありません。
+        </p>
+      </aside>
+
+      <nav class="section-nav" aria-label="会社情報の目次">
+        <a href="#philosophy">企業理念</a>
+        <a href="#overview">会社概要</a>
+        <a href="#business">事業内容</a>
+        <a href="#metrics">主要指標</a>
+        <a href="#history">沿革</a>
+        <a href="#leadership">役員</a>
+        <a href="#locations">拠点</a>
+        <a href="#group">グループ会社</a>
+        <a href="#initiatives">取り組み</a>
+      </nav>
+
+      <section class="corporate-section" id="philosophy">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">PHILOSOPHY</p>
+          <h2>企業理念</h2>
+        </div>
+
+        <div class="statement">
+          <h3>Mission</h3>
+          <p>
+            はたらく女性の「いつも幸せ」を、地域の企業とともにつくる。
+          </p>
+        </div>
+
+        <div class="statement">
+          <h3>Vision</h3>
+          <p class="vision-english">
+            Women's Career Infrastructure Company
+          </p>
+          <p>
+            女性のキャリアと中小企業の採用を支える、社会インフラになる。
+          </p>
+        </div>
+
+        <h3 class="subheading">Value — 行動指針</h3>
+
+        <div class="value-grid">
+          <section class="value-card">
+            <span class="value-number">01</span>
+            <h4>Empathy</h4>
+            <p>求職者と企業の両方の立場で考える。</p>
+          </section>
+
+          <section class="value-card">
+            <span class="value-number">02</span>
+            <h4>Fairness</h4>
+            <p>情報は公平に、透明に届ける。</p>
+          </section>
+
+          <section class="value-card">
+            <span class="value-number">03</span>
+            <h4>Speed</h4>
+            <p>現場の課題にすばやく応える。</p>
+          </section>
+
+          <section class="value-card">
+            <span class="value-number">04</span>
+            <h4>Challenge</h4>
+            <p>前例がなくても、より良い方法を試す。</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="corporate-section" id="overview">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">COMPANY PROFILE</p>
+          <h2>会社概要</h2>
+        </div>
+
+        <dl class="corporate-info">
+          <div>
+            <dt>社名</dt>
+            <dd>株式会社ルピナス</dd>
+          </div>
+
+          <div>
+            <dt>英文社名</dt>
+            <dd>Lupinus Inc.</dd>
+          </div>
+
+          <div>
+            <dt>設立</dt>
+            <dd>
+              <time datetime="2009-03-08">2009年3月8日</time>
+            </dd>
+          </div>
+
+          <div>
+            <dt>本社所在地</dt>
+            <dd>
+              〒150-0002<br>
+              東京都渋谷区渋谷2丁目24番12号<br>
+              渋谷クロスゲートビル 18F
+            </dd>
+          </div>
+
+          <div>
+            <dt>代表者</dt>
+            <dd>代表取締役社長 CEO 早瀬 澄香</dd>
+          </div>
+
+          <div>
+            <dt>資本金</dt>
+            <dd>
+              9億8,500万円
+              <span class="data-note">2026年2月末時点</span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>売上高</dt>
+            <dd>
+              312億4,000万円
+              <span class="data-note">2026年2月期・連結</span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>従業員数</dt>
+            <dd>
+              1,284名
+              <span class="data-note">連結／2026年2月末時点</span>
+              <span class="data-note">女性比率：68.2％</span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>決算期</dt>
+            <dd>2月</dd>
+          </div>
+
+          <div>
+            <dt>上場市場</dt>
+            <dd>
+              東京証券取引所 プライム市場
+              <span class="data-note">架空の設定です。</span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>事業内容</dt>
+            <dd>
+              女性向け求人情報サイトの運営、人材紹介事業、
+              中小企業向け採用支援・DXサービスの提供
+            </dd>
+          </div>
+
+          <div>
+            <dt>許認可</dt>
+            <dd>
+              有料職業紹介事業許可（13-ユ-XXXXXX）
+              <span class="data-note">
+                架空の番号です。実際の許可番号ではありません。
+              </span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>取引銀行</dt>
+            <dd>
+              みずほ銀行、三菱UFJ銀行、三井住友銀行
+              <span class="data-note">取引関係は架空の設定です。</span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>加盟団体</dt>
+            <dd>
+              公益社団法人全国求人情報協会<br>
+              一般社団法人日本人材紹介事業協会
+              <span class="data-note">加盟は架空の設定です。</span>
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="corporate-section" id="business">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">OUR BUSINESS</p>
+          <h2>事業内容</h2>
+        </div>
+
+        <section class="business-block">
+          <div class="business-title">
+            <span>01</span>
+            <h3>人材サービス事業</h3>
+          </div>
+
+          <p>
+            中小企業の採用課題と、ライフステージに合わせて働き方を選びたい女性を
+            つなぐ求人メディアと人材紹介サービスを運営しています。
+          </p>
+
+          <div class="service-list">
+            <section class="service-item">
+              <h4>ルピナスワーク</h4>
+              <p>
+                中小企業の正社員・契約社員求人に特化した、
+                女性向けの転職サイト。
+              </p>
+            </section>
+
+            <section class="service-item">
+              <h4>ルピナスワークNEXT</h4>
+              <p>
+                職場の雰囲気を動画で伝える、
+                未経験・異業種転職向けの求人サイト。
+              </p>
+            </section>
+
+            <section class="service-item">
+              <h4>ルピナスワーク ママ＆ファミリー</h4>
+              <p>
+                時短・在宅・扶養内など、
+                柔軟な働き方の求人を集めた専門サイト。
+              </p>
+            </section>
+
+            <section class="service-item">
+              <h4>ルピナスエージェント</h4>
+              <p>
+                キャリアアドバイザーが伴走する、
+                女性専任の転職エージェント。
+              </p>
+            </section>
+
+            <section class="service-item">
+              <h4>ルピナスリターン</h4>
+              <p>
+                出産・育児・介護などでブランクがある方の
+                再就職を支援するサービス。
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <section class="business-block">
+          <div class="business-title">
+            <span>02</span>
+            <h3>DX事業</h3>
+          </div>
+
+          <p>
+            人手不足に悩む中小企業に向けて、
+            採用から定着までの業務をデジタルで支援します。
+          </p>
+
+          <div class="service-list">
+            <section class="service-item">
+              <h4>ルピナス採用クラウド</h4>
+              <p>
+                応募者管理・面接日程の調整・自動連絡を
+                一元化する採用管理SaaS。
+              </p>
+            </section>
+
+            <section class="service-item">
+              <h4>ルピナスHRアシスト</h4>
+              <p>
+                入社手続き・勤怠・育休申請などの
+                労務業務を自動化するツール。
+              </p>
+            </section>
+
+            <section class="service-item">
+              <h4>ルピナス定着サーベイ</h4>
+              <p>
+                女性従業員の定着率改善に向けた
+                エンゲージメント調査・分析サービス。
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <p class="section-note">
+          サービス名と説明は創作上の設定です。
+          このサイトから求人応募や人材紹介の申し込みはできません。
+        </p>
+      </section>
+
+      <section class="corporate-section" id="metrics">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">LUPINUS IN NUMBERS</p>
+          <h2>主要指標</h2>
+          <p>2026年2月期の設定値</p>
+        </div>
+
+        <div class="metrics-grid">
+          <section class="metric-card">
+            <h3>ルピナスワーク 月間ユニークユーザー数</h3>
+            <p class="metric-value">
+              <span class="metric-prefix">約</span>1,050<span>万人</span>
+            </p>
+          </section>
+
+          <section class="metric-card">
+            <h3>掲載企業数・累計</h3>
+            <p class="metric-value">
+              <span class="metric-prefix">約</span>86,000<span>社</span>
+            </p>
+          </section>
+
+          <section class="metric-card">
+            <h3>掲載企業のうち従業員300名以下の中小企業比率</h3>
+            <p class="metric-value">82.4<span>％</span></p>
+          </section>
+
+          <section class="metric-card">
+            <h3>会員登録者数・累計</h3>
+            <p class="metric-value">
+              <span class="metric-prefix">約</span>620<span>万人</span>
+            </p>
+          </section>
+
+          <section class="metric-card">
+            <h3>ルピナス採用クラウド 導入社数</h3>
+            <p class="metric-value">
+              <span class="metric-prefix">約</span>12,300<span>社</span>
+            </p>
+          </section>
+        </div>
+
+        <p class="section-note">
+          上記はすべて架空の数値であり、実際の利用実績ではありません。
+        </p>
+      </section>
+
+      <section class="corporate-section" id="history">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">HISTORY</p>
+          <h2>沿革</h2>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <time datetime="2009-03">2009年3月</time>
+            <p>東京都渋谷区にて株式会社ルピナスを設立。</p>
+          </li>
+
+          <li>
+            <time datetime="2010-04">2010年4月</time>
+            <p>女性向け転職サイト「ルピナスワーク」の提供を開始。</p>
+          </li>
+
+          <li>
+            <time datetime="2012-09">2012年9月</time>
+            <p>
+              有料職業紹介事業の許可を取得。
+              「ルピナスエージェント」を開始。
+            </p>
+          </li>
+
+          <li>
+            <time datetime="2014-06">2014年6月</time>
+            <p>大阪支社・名古屋支社を開設。</p>
+          </li>
+
+          <li>
+            <time datetime="2016-03">2016年3月</time>
+            <p>東京証券取引所マザーズ市場に上場。</p>
+          </li>
+
+          <li>
+            <time datetime="2017-10">2017年10月</time>
+            <p>動画求人サイト「ルピナスワークNEXT」を開始。</p>
+          </li>
+
+          <li>
+            <time datetime="2018-11">2018年11月</time>
+            <p>東京証券取引所 市場第一部へ市場変更。</p>
+          </li>
+
+          <li>
+            <time datetime="2020-07">2020年7月</time>
+            <p>
+              DX事業を立ち上げ、
+              「ルピナス採用クラウド」の提供を開始。
+            </p>
+          </li>
+
+          <li>
+            <time datetime="2022-04">2022年4月</time>
+            <p>
+              東京証券取引所の市場区分見直しに伴い、
+              プライム市場へ移行。
+            </p>
+          </li>
+
+          <li>
+            <time datetime="2023-05">2023年5月</time>
+            <p>再就職支援サービス「ルピナスリターン」を開始。</p>
+          </li>
+
+          <li>
+            <time datetime="2024-08">2024年8月</time>
+            <p>「ルピナスワーク ママ＆ファミリー」を開始。</p>
+          </li>
+
+          <li>
+            <time datetime="2025-03">2025年3月</time>
+            <p>「えるぼし」最高位・3段階目の認定を取得。</p>
+          </li>
+
+          <li>
+            <time datetime="2026-01">2026年1月</time>
+            <p>AIによるキャリアマッチング機能を全サービスに導入。</p>
+          </li>
+        </ol>
+
+        <p class="section-note">
+          上場・許認可・認定を含む沿革は架空の設定です。
+        </p>
+      </section>
+
+      <section class="corporate-section" id="leadership">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">LEADERSHIP</p>
+          <h2>役員一覧</h2>
+        </div>
+
+        <dl class="corporate-info">
+          <div>
+            <dt>代表取締役社長 CEO</dt>
+            <dd>早瀬 澄香</dd>
+          </div>
+
+          <div>
+            <dt>取締役 CFO</dt>
+            <dd>久遠 直人</dd>
+          </div>
+
+          <div>
+            <dt>取締役 CTO</dt>
+            <dd>篠宮 灯</dd>
+          </div>
+
+          <div>
+            <dt>取締役</dt>
+            <dd>
+              朝比奈 莉子
+              <span class="data-note">人材サービス事業本部長</span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>社外取締役</dt>
+            <dd>藤堂 紗英</dd>
+          </div>
+
+          <div>
+            <dt>社外取締役</dt>
+            <dd>鳴海 浩一</dd>
+          </div>
+
+          <div>
+            <dt>常勤監査役</dt>
+            <dd>桐谷 雅彦</dd>
+          </div>
+
+          <div>
+            <dt>社外監査役</dt>
+            <dd>
+              白石 綾乃
+              <span class="data-note">公認会計士</span>
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="corporate-section" id="locations">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">LOCATIONS</p>
+          <h2>拠点一覧</h2>
+        </div>
+
+        <dl class="corporate-info">
+          <div>
+            <dt>本社</dt>
+            <dd>東京都渋谷区</dd>
+          </div>
+
+          <div>
+            <dt>札幌支店</dt>
+            <dd>北海道札幌市中央区</dd>
+          </div>
+
+          <div>
+            <dt>仙台支店</dt>
+            <dd>宮城県仙台市青葉区</dd>
+          </div>
+
+          <div>
+            <dt>横浜支店</dt>
+            <dd>神奈川県横浜市西区</dd>
+          </div>
+
+          <div>
+            <dt>名古屋支社</dt>
+            <dd>愛知県名古屋市中村区</dd>
+          </div>
+
+          <div>
+            <dt>大阪支社</dt>
+            <dd>大阪府大阪市北区</dd>
+          </div>
+
+          <div>
+            <dt>広島支店</dt>
+            <dd>広島県広島市中区</dd>
+          </div>
+
+          <div>
+            <dt>福岡支社</dt>
+            <dd>福岡県福岡市博多区</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="corporate-section" id="group">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">GROUP COMPANIES</p>
+          <h2>グループ会社</h2>
+        </div>
+
+        <div class="group-list">
+          <section class="group-card">
+            <div class="group-card-heading">
+              <h3>株式会社ルピナスキャリアラボ</h3>
+              <span>出資比率：100％</span>
+            </div>
+            <p>女性のキャリア研修・リスキリング講座の運営。</p>
+          </section>
+
+          <section class="group-card">
+            <div class="group-card-heading">
+              <h3>株式会社ルピナステクノロジーズ</h3>
+              <span>出資比率：100％</span>
+            </div>
+            <p>DXプロダクトの開発・運用。</p>
+          </section>
+
+          <section class="group-card">
+            <div class="group-card-heading">
+              <h3>株式会社ルピナス地域創生パートナーズ</h3>
+              <span>出資比率：70％</span>
+            </div>
+            <p>地方の中小企業向けの採用ブランディング支援。</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="corporate-section" id="initiatives">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">INITIATIVES</p>
+          <h2>外部認定・取り組み</h2>
+        </div>
+
+        <ul class="initiative-list">
+          <li>
+            女性活躍推進法に基づく「えるぼし」認定・3段階目。
+          </li>
+          <li>
+            次世代育成支援対策推進法に基づく
+            「プラチナくるみん」認定。
+          </li>
+          <li>
+            健康経営優良法人・大規模法人部門認定。
+          </li>
+          <li>
+            国際女性デー・3月8日を創業記念日とし、
+            毎年「はたらく女性白書」を発行。
+          </li>
+        </ul>
+
+        <p class="section-note">
+          認定の取得と白書の発行は架空の設定です。
+          実際の認定ロゴや公的な認証表示は使用していません。
+        </p>
+      </section>
+
+      <section class="corporate-section media-panel">
+        <p class="eyebrow">OUR MEDIA</p>
+        <h2>働く女性の声を、次のきっかけに。</h2>
+        <p>
+          WORK & MEは、株式会社ルピナスが運営する設定の
+          女性向けストーリー・ライフスタイルメディアです。
+          社員インタビューや職場の日常を通じて、
+          読者が自分らしい選択を考えるための情報を届けます。
+        </p>
+
+        <div class="action-links">
+          <a class="button" href="editorial.html">
+            編集部・編集方針を見る
+          </a>
+          <a class="plain-link" href="contact.html">
+            掲載・広告のお問い合わせ →
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="ad-rail" id="advertisements" aria-label="画像広告">
+      <p class="ad-label">ADVERTISEMENT / 広告</p>
+
+      <a class="ad-link" id="ad-link" href="lumiere.html">
+        <img
+          class="ad-image"
+          id="ad-image"
+          src="assets/images/lumiere-ad.jpg"
+          alt="広告：Lumière Hair Tokyo。美容室の紹介ページへ"
+          width="400"
+          height="400"
+        >
+      </a>
+
+      <p class="ad-caption" id="ad-caption">
+        髪を整えて、私らしい一歩を。
+      </p>
+
+      <div class="ad-controls">
+        <span id="ad-count">1 / 3</span>
+
+        <div class="ad-buttons">
+          <button id="ad-next" type="button" aria-label="次の広告">
+            →
+          </button>
+          <button id="ad-toggle" type="button">
+            停止
+          </button>
+        </div>
+      </div>
+
+      <div class="rail-about">
+        <p>
+          はたらく女性の<br>
+          「いつも幸せ」を。
+        </p>
+        <a href="editorial.html">編集部の想い →</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="logo" href="index.html">
+          WORK <span>&</span> ME
+        </a>
+        <p class="copyright">
+          運営：株式会社ルピナス / 架空の企業設定
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="about.html" aria-current="page">運営会社</a>
+        <a href="editorial.html">編集部・編集方針</a>
+        <a href="contact.html">掲載・広告のお問い合わせ</a>
+        <a href="privacy.html">プライバシー</a>
+      </nav>
+    </div>
+  </footer>
+
   <noscript>
-    <h1>運営会社</h1>
-    <p>このページの表示にはJavaScriptを有効にしてください。</p>
+    <p class="no-script-note">
+      会社情報はそのまま閲覧できます。
+      広告の自動切り替えにはJavaScriptが必要です。
+    </p>
   </noscript>
 </body>
 </html>
