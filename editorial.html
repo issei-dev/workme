@@ -5,17 +5,529 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="WORK & ME編集部の紹介、編集方針、広告掲載方針について。">
-  <title>編集部について｜WORK & ME</title>
+  <meta name="theme-color" content="#7B5EA7">
+  <meta
+    name="description"
+    content="株式会社ルピナスが運営する設定のWORK & ME編集部。編集理念、取材方針、広告掲載方針、訂正対応について。"
+  >
+  <title>編集部・編集方針｜WORK & ME</title>
+
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/corporate.css">
+
   <script src="assets/content.js" defer></script>
-  <script src="assets/app.js" defer></script>
+  <script src="assets/corporate.js" defer></script>
 </head>
-<body data-page="editorial">
-  <div id="app"></div>
+
+<body class="corporate-page" data-corporate-page="editorial">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        WORK <span>&</span> ME
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        メニュー
+      </button>
+
+      <nav
+        class="navigation"
+        id="navigation"
+        aria-label="メインメニュー"
+      >
+        <a href="people.html">人を知る</a>
+        <a href="work.html">働き方を知る</a>
+        <a href="companies.html">会社を知る</a>
+        <a href="lifestyle.html">自分を楽しむ</a>
+        <a href="editorial.html" aria-current="page">編集部</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-layout">
+    <main id="main" tabindex="-1">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <a href="index.html">トップ</a>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">編集部</span>
+      </nav>
+
+      <header class="corporate-hero">
+        <p class="eyebrow">WORK & ME EDITORIAL</p>
+        <h1>働く女性の声を、<br>次のきっかけに。</h1>
+        <p class="corporate-lead">
+          誰かの経験が、自分の選択を考えるヒントになる。<br>
+          結果だけではなく、その途中にある想いを届けます。
+        </p>
+      </header>
+
+      <aside class="fiction-notice" aria-label="編集部情報について">
+        <strong>架空のメディア設定・編集方針案</strong>
+        <p>
+          WORK & MEは、株式会社ルピナスが運営する設定のメディアです。
+          以下はサイト向けに整えた編集方針案です。
+          編集部員の氏名・人数・経歴は未設定のため、
+          実在する人物のプロフィールとしては掲載していません。
+        </p>
+      </aside>
+
+      <nav class="section-nav" aria-label="編集部情報の目次">
+        <a href="#mission">編集部の想い</a>
+        <a href="#themes">扱うテーマ</a>
+        <a href="#policy">編集方針</a>
+        <a href="#team">担当機能</a>
+        <a href="#process">制作の流れ</a>
+        <a href="#advertising">広告方針</a>
+        <a href="#corrections">訂正・更新</a>
+      </nav>
+
+      <section class="corporate-section" id="mission">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">OUR PURPOSE</p>
+          <h2>編集部の想い</h2>
+        </div>
+
+        <p class="editorial-text">
+          キャリアの正解は、一人ひとり違います。
+          新しい仕事への挑戦、専門性を深めること、
+          暮らしとのバランスを見直すこと。
+          どの選択にも、その人なりの理由があります。
+        </p>
+
+        <p class="editorial-text">
+          WORK & MEは、企業で働く女性のインタビュー、
+          チームの対談、社内部活や日常の活動を通じて、
+          仕事や職場の姿を具体的に伝えます。
+          華やかな成果だけでなく、迷い、工夫、失敗、
+          小さな変化にも目を向けます。
+        </p>
+
+        <p class="editorial-text">
+          運営会社のMissionである
+          「はたらく女性の『いつも幸せ』を、地域の企業とともにつくる。」
+          を、読者自身が考え、選べる情報づくりにつなげます。
+        </p>
+
+        <div class="editorial-quote">
+          <p>誰かの正解を押しつけず、<br>自分の選択を支えるメディアへ。</p>
+        </div>
+      </section>
+
+      <section class="corporate-section" id="themes">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">EDITORIAL THEMES</p>
+          <h2>扱うテーマ</h2>
+        </div>
+
+        <div class="editorial-theme-grid">
+          <section class="theme-card">
+            <span class="value-number">01</span>
+            <h3>人を知る</h3>
+            <p>
+              仕事内容、キャリアの転機、一日の過ごし方。
+              働く女性の経験を、その人の言葉で紹介します。
+            </p>
+            <a class="plain-link" href="people.html">
+              インタビューを見る →
+            </a>
+          </section>
+
+          <section class="theme-card">
+            <span class="value-number">02</span>
+            <h3>働き方を知る</h3>
+            <p>
+              社員対談、プロジェクト、社内部活。
+              職場の関係性や、日々の仕事の進め方を伝えます。
+            </p>
+            <a class="plain-link" href="work.html">
+              職場のストーリーを見る →
+            </a>
+          </section>
+
+          <section class="theme-card">
+            <span class="value-number">03</span>
+            <h3>会社を知る</h3>
+            <p>
+              事業、文化、制度、働く環境。
+              企業の説明と社員の体験談を区別しながら紹介します。
+            </p>
+            <a class="plain-link" href="companies.html">
+              企業紹介を見る →
+            </a>
+          </section>
+
+          <section class="theme-card">
+            <span class="value-number">04</span>
+            <h3>自分を楽しむ</h3>
+            <p>
+              美容、運動、インテリア、セルフケア。
+              必要なものを自分で選ぶための情報を届けます。
+            </p>
+            <a class="plain-link" href="lifestyle.html">
+              暮らしの記事を見る →
+            </a>
+          </section>
+        </div>
+      </section>
+
+      <section class="corporate-section" id="policy">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">EDITORIAL POLICY</p>
+          <h2>編集方針</h2>
+        </div>
+
+        <ol class="policy-list">
+          <li>
+            <h3>経験の背景まで伝える</h3>
+            <p>
+              成果だけでなく、当時の状況、悩み、周囲の支援、
+              選択に至った理由も取材します。
+              個人の成功例を、すべての人に当てはまる方法として扱いません。
+            </p>
+          </li>
+
+          <li>
+            <h3>多様な働き方を尊重する</h3>
+            <p>
+              昇進や転職だけを成長の指標にしません。
+              専門性、安定、休息、生活との両立など、
+              それぞれの価値観を尊重します。
+            </p>
+          </li>
+
+          <li>
+            <h3>事実と体験談を区別する</h3>
+            <p>
+              企業制度や勤務条件は企業に確認し、
+              社員の感想は個人の経験として示します。
+              制度の有無と、その使いやすさを同じ意味で扱いません。
+            </p>
+          </li>
+
+          <li>
+            <h3>掲載の同意とプライバシーを大切にする</h3>
+            <p>
+              氏名、写真、発言の掲載範囲を確認します。
+              健康、家庭、育児、介護などの情報は、
+              取材対象者の意思を尊重して扱います。
+            </p>
+          </li>
+
+          <li>
+            <h3>必要な情報を具体的にする</h3>
+            <p>
+              社内部活では参加の任意性、活動時間、費用を、
+              サービス紹介では料金や利用条件を確認します。
+              「楽しそう」「便利そう」だけで判断させない構成を目指します。
+            </p>
+          </li>
+
+          <li>
+            <h3>美容や暮らしの選択を押しつけない</h3>
+            <p>
+              外見や生活スタイルを、仕事の能力や価値と結びつけません。
+              美容、運動、ファッションは、
+              本人が望む場合に楽しみ、選べる情報として紹介します。
+            </p>
+          </li>
+
+          <li>
+            <h3>運営会社との関係を明示する</h3>
+            <p>
+              株式会社ルピナスやグループ会社のサービスを紹介する場合は、
+              運営会社との関係を分かるように示します。
+              自社サービスを、第三者による独立した評価のように見せません。
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="corporate-section" id="team">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">EDITORIAL FUNCTIONS</p>
+          <h2>編集部の担当機能</h2>
+          <p>役割の設計です。実際の人員構成を示すものではありません。</p>
+        </div>
+
+        <div class="editorial-team-grid">
+          <section class="team-role">
+            <h3>編集責任・企画</h3>
+            <p>
+              メディアのテーマと企画を設計し、
+              編集方針、記事品質、訂正対応を管理します。
+            </p>
+          </section>
+
+          <section class="team-role">
+            <h3>取材・執筆</h3>
+            <p>
+              インタビューや対談を実施し、
+              発言の文脈を保ちながら記事を制作します。
+            </p>
+          </section>
+
+          <section class="team-role">
+            <h3>撮影・デザイン</h3>
+            <p>
+              人物や職場の空気を伝える写真と、
+              読みやすく一貫したビジュアルを制作します。
+            </p>
+          </section>
+
+          <section class="team-role">
+            <h3>確認・運用</h3>
+            <p>
+              事実関係、画像の利用権、PR表示、
+              公開後の情報更新を確認します。
+            </p>
+          </section>
+        </div>
+
+        <p class="section-note">
+          編集部員の氏名・プロフィール・写真は、
+          設定と掲載範囲が確定した段階で追加します。
+          会社役員を編集部員として扱う設定は追加していません。
+        </p>
+      </section>
+
+      <section class="corporate-section" id="process">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">HOW WE CREATE</p>
+          <h2>記事制作の流れ</h2>
+        </div>
+
+        <ol class="process-list">
+          <li>
+            <span class="process-number">01</span>
+            <div>
+              <h3>テーマ・取材範囲の整理</h3>
+              <p>
+                読者に伝える内容、掲載目的、
+                編集記事か広告記事かを明確にします。
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <span class="process-number">02</span>
+            <div>
+              <h3>取材・撮影</h3>
+              <p>
+                取材対象者の同意を確認し、
+                仕事や経験の背景まで丁寧に聞き取ります。
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <span class="process-number">03</span>
+            <div>
+              <h3>編集・事実確認</h3>
+              <p>
+                固有名詞、数値、制度、発言の文脈、
+                写真の掲載範囲を確認します。
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <span class="process-number">04</span>
+            <div>
+              <h3>掲載区分を明示して公開</h3>
+              <p>
+                PR表記、公開日、更新日、
+                関連する企業やサービスへのリンクを整えます。
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <span class="process-number">05</span>
+            <div>
+              <h3>公開後の見直し</h3>
+              <p>
+                異動・退職、制度変更、料金変更、
+                誤情報の指摘に応じて内容を見直します。
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="corporate-section" id="advertising">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">ADVERTISING POLICY</p>
+          <h2>広告・タイアップ掲載方針</h2>
+        </div>
+
+        <div class="advertising-policy">
+          <section>
+            <h3>広告であることを分かりやすく</h3>
+            <p>
+              有料掲載、タイアップ、商品提供などの関係がある記事は、
+              記事一覧と本文の両方で「広告」または「PR」と明示します。
+              画像広告も広告枠であることを表示します。
+            </p>
+          </section>
+
+          <section>
+            <h3>編集記事との区別を維持</h3>
+            <p>
+              広告料金の支払いを、独立した編集部推薦や
+              人気順位の根拠として扱いません。
+              掲載企業による説明と編集部の取材内容を区別します。
+            </p>
+          </section>
+
+          <section>
+            <h3>料金・条件・表現を確認</h3>
+            <p>
+              無料、割引、キャンペーン、利用者の声などは、
+              対象条件と根拠を確認して掲載します。
+              健康や美容の効果、就職結果を保証する表現は避けます。
+            </p>
+          </section>
+
+          <section>
+            <h3>画像の性質を明示</h3>
+            <p>
+              イメージ写真や生成画像を、
+              実際の利用者、施設、実績の証拠として扱いません。
+              必要に応じて画像の性質を本文や注記で説明します。
+            </p>
+          </section>
+        </div>
+
+        <a class="plain-link" href="contact.html">
+          掲載・広告のお問い合わせ →
+        </a>
+      </section>
+
+      <section class="corporate-section" id="corrections">
+        <div class="corporate-section-heading">
+          <p class="eyebrow">CORRECTIONS & UPDATES</p>
+          <h2>訂正・更新・掲載のご相談</h2>
+        </div>
+
+        <p class="editorial-text">
+          誤った情報、古くなった制度や料金、
+          写真・氏名・発言の掲載についてのご相談は、
+          お問い合わせ窓口で受け付ける方針です。
+          内容を確認し、必要に応じて訂正、注記、
+          掲載範囲の変更を行います。
+        </p>
+
+        <p class="editorial-text">
+          重要な訂正では、変更内容と更新日が分かるようにします。
+          個人の安全やプライバシーに関わる相談は、
+          掲載継続の必要性も含めて検討します。
+        </p>
+
+        <aside class="fiction-notice">
+          <strong>問い合わせ窓口について</strong>
+          <p>
+            このデモには問い合わせ送信機能や実際の連絡先は設定していません。
+            正式な公開時に、担当窓口と対応方法を追加してください。
+          </p>
+        </aside>
+      </section>
+
+      <section class="corporate-section media-panel">
+        <p class="eyebrow">OPERATED BY LUPINUS</p>
+        <h2>運営会社について</h2>
+        <p>
+          女性のキャリアと中小企業の採用を支える、
+          Women's Career Infrastructure Company。
+          株式会社ルピナスの企業理念、事業、会社概要を紹介します。
+        </p>
+
+        <div class="action-links">
+          <a class="button" href="about.html">
+            株式会社ルピナスの会社概要
+          </a>
+          <a class="plain-link" href="contact.html">
+            お問い合わせについて →
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="ad-rail" id="advertisements" aria-label="画像広告">
+      <p class="ad-label">ADVERTISEMENT / 広告</p>
+
+      <a class="ad-link" id="ad-link" href="lumiere.html">
+        <img
+          class="ad-image"
+          id="ad-image"
+          src="assets/images/lumiere-ad.jpg"
+          alt="広告：Lumière Hair Tokyo。美容室の紹介ページへ"
+          width="400"
+          height="400"
+        >
+      </a>
+
+      <p class="ad-caption" id="ad-caption">
+        髪を整えて、私らしい一歩を。
+      </p>
+
+      <div class="ad-controls">
+        <span id="ad-count">1 / 3</span>
+
+        <div class="ad-buttons">
+          <button id="ad-next" type="button" aria-label="次の広告">
+            →
+          </button>
+          <button id="ad-toggle" type="button">
+            停止
+          </button>
+        </div>
+      </div>
+
+      <div class="rail-about">
+        <p>
+          はたらく女性の<br>
+          「いつも幸せ」を。
+        </p>
+        <a href="about.html">株式会社ルピナスについて →</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="logo" href="index.html">
+          WORK <span>&</span> ME
+        </a>
+        <p class="copyright">
+          運営：株式会社ルピナス / 架空の企業設定
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="about.html">運営会社</a>
+        <a href="editorial.html" aria-current="page">
+          編集部・編集方針
+        </a>
+        <a href="contact.html">掲載・広告のお問い合わせ</a>
+        <a href="privacy.html">プライバシー</a>
+      </nav>
+    </div>
+  </footer>
+
   <noscript>
-    <h1>編集部について</h1>
-    <p>このページの表示にはJavaScriptを有効にしてください。</p>
+    <p class="no-script-note">
+      編集部情報はそのまま閲覧できます。
+      広告の自動切り替えにはJavaScriptが必要です。
+    </p>
   </noscript>
 </body>
 </html>
