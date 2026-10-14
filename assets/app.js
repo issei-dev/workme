@@ -364,31 +364,47 @@
     `;
   }
 
-  function homeSection(category, title) {
-    let cards;
+  // File: assets/app.js
 
-    if (category === "companies") {
-      cards = content.companies.map(companyCard).join("");
-    } else {
-      cards = content.stories
-        .filter(story => story.category === category)
-        .slice(0, 3)
-        .map(storyCard)
-        .join("");
-    }
+function homeSection(category, title) {
+  const information = content.categories[category];
 
-    return `
-      <section class="section">
-        <div class="section-heading">
-          <h2>${escapeHtml(title)}</h2>
-          <a href="${content.categories[category].href}">
-            すべて見る →
-          </a>
-        </div>
-        <div class="grid">${cards}</div>
-      </section>
-    `;
+  if (!information) {
+    return "";
   }
+
+  let cards = "";
+
+  if (category === "companies") {
+    cards = content.companies
+      .map(companyCard)
+      .join("");
+  } else {
+    cards = content.stories
+      .filter(story => story.category === category)
+      .map(storyCard)
+      .join("");
+  }
+
+  if (!cards) {
+    return "";
+  }
+
+  return `
+    <section class="section">
+      <div class="section-heading">
+        <h2>${escapeHtml(title)}</h2>
+        <a href="${localHref(information.href)}">
+          すべて見る →
+        </a>
+      </div>
+
+      <div class="grid">
+        ${cards}
+      </div>
+    </section>
+  `;
+}
 
   function renderHome() {
     const featured = content.stories[0];
