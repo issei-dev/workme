@@ -1,0 +1,2008 @@
+<!-- Output: html -->
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta
+    name="description"
+    content="働く女性のストーリー、職場の日常、キャリアと暮らしのヒントを届けるメディア。"
+  >
+  <title>WORK & ME｜働く私に、次のきっかけを。</title>
+
+  <style>
+    :root {
+      --white: #ffffff;
+      --text: #242b30;
+      --muted: #737d83;
+      --accent: #087d90;
+      --line: #e8ecee;
+      --soft: #f5f8f9;
+      --width: 1320px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        sans-serif;
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.5;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    .skip {
+      position: fixed;
+      top: -100px;
+      left: 20px;
+      z-index: 100;
+      padding: 10px 18px;
+      background: white;
+      border: 1px solid var(--accent);
+    }
+
+    .skip:focus {
+      top: 12px;
+    }
+
+    .header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      max-width: var(--width);
+      margin: auto;
+      min-height: 84px;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: -0.06em;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .navigation a {
+      padding: 27px 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+    }
+
+    .navigation a:hover,
+    .navigation a[aria-current="page"] {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid var(--line);
+      padding: 7px 12px;
+      background: white;
+      font-size: 13px;
+    }
+
+    .layout {
+      max-width: var(--width);
+      margin: auto;
+      padding: 48px 32px 88px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 200px;
+      gap: 56px;
+      align-items: start;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    main:focus {
+      outline: none;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+    }
+
+    .intro {
+      margin-bottom: 34px;
+    }
+
+    .intro h1 {
+      margin-bottom: 14px;
+      font-size: clamp(29px, 3.4vw, 43px);
+      letter-spacing: -0.035em;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      background: var(--soft);
+      overflow: hidden;
+    }
+
+    .feature-image {
+      width: 100%;
+      height: 100%;
+      min-height: 350px;
+      object-fit: cover;
+    }
+
+    .feature-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 36px;
+    }
+
+    .feature-copy h2 {
+      margin: 16px 0;
+      font-size: clamp(22px, 2.5vw, 31px);
+      letter-spacing: -0.03em;
+    }
+
+    .feature-copy p {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .arrow-link {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .arrow-link::after {
+      content: " →";
+    }
+
+    .feature:hover h2,
+    .card-link:hover h3 {
+      color: var(--accent);
+    }
+
+    .topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topics a {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .topics a:hover {
+      color: var(--accent);
+    }
+
+    .section {
+      margin-top: 52px;
+    }
+
+    .section-heading {
+      margin-bottom: 23px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 0;
+      font-size: 23px;
+      letter-spacing: -0.03em;
+    }
+
+    .section-heading a {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 30px 24px;
+    }
+
+    .card {
+      min-width: 0;
+    }
+
+    .card-link {
+      display: block;
+      height: 100%;
+    }
+
+    .card-image {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      background: var(--soft);
+    }
+
+    .card-meta {
+      margin: 15px 0 8px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .card h3 {
+      margin-bottom: 9px;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .card-description {
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .card-source {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .pr {
+      display: inline-block;
+      padding: 0 5px;
+      border: 1px solid #b8c2c7;
+      color: #5c686f;
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .search {
+      max-width: 620px;
+      margin: 26px 0 16px;
+    }
+
+    .search label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .search input {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--soft);
+      padding: 13px 16px;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .search-result {
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .rail {
+      position: sticky;
+      top: 28px;
+    }
+
+    .ad-label {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+    }
+
+    .ad-link {
+      display: block;
+      border: 1px solid var(--line);
+    }
+
+    .ad-image {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+
+    .ad-caption {
+      margin: 11px 0;
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .ad-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .ad-buttons {
+      display: flex;
+      gap: 6px;
+    }
+
+    .ad-buttons button {
+      min-width: 30px;
+      min-height: 30px;
+      padding: 3px 7px;
+      background: white;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .rail-about {
+      margin-top: 30px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .rail-about p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .rail-about a {
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--accent);
+    }
+
+    .article-header h1 {
+      margin-bottom: 20px;
+      font-size: clamp(27px, 3.3vw, 39px);
+      letter-spacing: -0.025em;
+    }
+
+    .article-lead {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .article-cover {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 30px 0 12px;
+      object-fit: cover;
+    }
+
+    .caption {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .article-body {
+      max-width: 720px;
+      margin: 36px auto 0;
+    }
+
+    .article-body h2 {
+      margin: 40px 0 15px;
+      font-size: 23px;
+    }
+
+    .article-body p,
+    .article-body li {
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .notice {
+      margin: 24px 0;
+      padding: 15px 18px;
+      background: var(--soft);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 22px;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      background: var(--accent);
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .company-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 72px;
+      height: 72px;
+      margin: 24px 0 18px;
+      padding: 10px;
+      background: var(--soft);
+      color: var(--accent);
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .info {
+      margin: 28px 0;
+    }
+
+    .info > div {
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1fr);
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+
+    .info dt {
+      color: var(--muted);
+    }
+
+    .info dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin: 28px 0;
+    }
+
+    .member {
+      border-top: 2px solid var(--text);
+      padding-top: 18px;
+    }
+
+    .member h3 {
+      margin-bottom: 7px;
+      font-size: 17px;
+    }
+
+    .member p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 38px 32px;
+    }
+
+    .footer-inner {
+      max-width: 1256px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .copyright {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 1120px) {
+      .layout {
+        gap: 32px;
+        grid-template-columns: minmax(0, 1fr) 180px;
+      }
+
+      .navigation {
+        gap: 19px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .feature {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-image {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+      }
+
+      .feature-copy {
+        padding: 28px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 0;
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .navigation {
+        display: none;
+        width: 100%;
+        padding: 10px 0 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .navigation.is-open {
+        display: flex;
+      }
+
+      .navigation a {
+        padding: 10px 0;
+        border: 0;
+      }
+
+      .layout {
+        padding: 32px 20px 54px;
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .intro {
+        margin-bottom: 25px;
+      }
+
+      .intro h1 {
+        font-size: 30px;
+      }
+
+      .feature-copy {
+        padding: 24px;
+      }
+
+      .section {
+        margin-top: 40px;
+      }
+
+      .section-heading h2 {
+        font-size: 21px;
+      }
+
+      .grid {
+        gap: 28px 16px;
+      }
+
+      .card h3 {
+        font-size: 14px;
+      }
+
+      .card-description {
+        display: none;
+      }
+
+      .rail {
+        position: static;
+        width: 220px;
+        margin: 0 auto;
+      }
+
+      .rail-about {
+        display: none;
+      }
+
+      .member-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .info > div {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+
+      .footer {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card h3 {
+        font-size: 17px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="#/">WORK <span>&</span> ME</a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        メニュー
+      </button>
+
+      <nav class="navigation" id="navigation" aria-label="メインメニュー">
+        <a href="#/people">人を知る</a>
+        <a href="#/work">働き方を知る</a>
+        <a href="#/companies">会社を知る</a>
+        <a href="#/lifestyle">自分を楽しむ</a>
+        <a href="#/editorial">編集部</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <main id="main" tabindex="-1"></main>
+
+    <aside class="rail" aria-label="広告">
+      <p class="ad-label">ADVERTISEMENT / 広告</p>
+
+      <a class="ad-link" id="ad-link" href="#/">
+        <img
+          class="ad-image"
+          id="ad-image"
+          width="400"
+          height="400"
+          alt=""
+        >
+      </a>
+
+      <p class="ad-caption" id="ad-caption"></p>
+
+      <div class="ad-controls">
+        <span id="ad-count"></span>
+
+        <div class="ad-buttons">
+          <button id="ad-next" type="button" aria-label="次の広告">
+            →
+          </button>
+          <button id="ad-toggle" type="button">
+            停止
+          </button>
+        </div>
+      </div>
+
+      <div class="rail-about">
+        <p>
+          仕事も暮らしも、<br>
+          自分らしく選ぶために。
+        </p>
+        <a href="#/editorial">私たちの編集方針 →</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <a class="logo" href="#/">WORK <span>&</span> ME</a>
+        <p class="copyright">
+          デモサイト。企業・人物・サービスは架空のサンプルです。
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="#/about">運営会社</a>
+        <a href="#/editorial">編集部・編集方針</a>
+        <a href="#/contact">掲載・広告のお問い合わせ</a>
+        <a href="#/privacy">プライバシー</a>
+      </nav>
+    </div>
+  </footer>
+
+  <noscript>
+    <p>このサイトの表示にはJavaScriptを有効にしてください。</p>
+  </noscript>
+
+  <script>
+    /*
+     * 単一ファイルで動作する静的サイトのデモです。
+     *
+     * 使用方法:
+     * 1. このコードを index.html として保存
+     * 2. ブラウザで開く
+     *
+     * 未実装:
+     * 管理画面、問い合わせ送信、求人応募、アクセス解析
+     *
+     * 写真:
+     * デモ用の外部ストック画像を読み込みます。
+     * 写真の人物は記事の登場人物ではありません。
+     * 本番では掲載許諾済みの写真と実際の情報に差し替えてください。
+     *
+     * 主な編集箇所:
+     * STORIES: 記事
+     * COMPANIES: 企業紹介
+     * ADS: 正方形画像広告
+     * renderStatic(): 運営会社・編集部など
+     */
+
+    const PHOTO = {
+      portrait:
+        "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1200&q=85",
+      meeting:
+        "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85",
+      office:
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85",
+      desk:
+        "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=85",
+      fashion:
+        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85",
+      care:
+        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
+      running:
+        "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=85"
+    };
+
+    const CATEGORIES = {
+      people: {
+        name: "人を知る",
+        english: "PEOPLE",
+        description: "働く女性の選択と、その先にあるストーリー。"
+      },
+      work: {
+        name: "働き方を知る",
+        english: "WORK STYLE",
+        description: "対談、チーム、部活。職場の日常から見えてくること。"
+      },
+      companies: {
+        name: "会社を知る",
+        english: "COMPANIES",
+        description: "想い、仕事、働く人から、自分に合う会社を考える。"
+      },
+      lifestyle: {
+        name: "自分を楽しむ",
+        english: "LIFESTYLE",
+        description: "美容もファッションも、自分のための選択を。"
+      }
+    };
+
+    const STORIES = [
+      {
+        id: "career",
+        category: "people",
+        title: "誰かの正解より、私が納得できる働き方を。",
+        description: "企画職のキャリアの転機と、迷ったときに大切にしていること。",
+        label: "社員インタビュー",
+        source: "GREEN NOTE / 企画",
+        companyId: "green",
+        image: PHOTO.portrait,
+        tags: ["企画", "キャリア", "転職"],
+        pr: false,
+        sections: [
+          [
+            "仕事の面白さは、対話の中にある",
+            "企画は、アイデアを出して終わりではありません。相手が何に困っているのかを聞き、チームで実現できる形を考える。その過程に面白さを感じています。"
+          ],
+          [
+            "迷ったときは、小さく試してみる",
+            "新しい役割に挑戦するとき、最初から自信があったわけではありません。まず一つ取り組み、振り返り、相談する。その繰り返しが、自分なりの判断につながりました。"
+          ],
+          [
+            "これからの自分へ",
+            "役職や肩書だけでなく、どんな仕事に関わりたいかを大切にしたい。今の経験を生かしながら、新しい領域にも少しずつ挑戦したいと考えています。"
+          ]
+        ]
+      },
+      {
+        id: "engineer",
+        category: "people",
+        title: "つくることが好き。その気持ちを、仕事の軸に。",
+        description: "専門性を育てながら、チームで働くエンジニアの一日。",
+        label: "仕事の一日",
+        source: "FLOW LAB / エンジニア",
+        companyId: "flow",
+        image: PHOTO.desk,
+        tags: ["エンジニア", "専門職", "仕事の一日"],
+        pr: false,
+        sections: [
+          [
+            "午前は、集中する時間",
+            "今日の優先順位をチームで確認し、開発に取り組みます。分からないことはメモし、相談する時間をあらかじめ確保しています。"
+          ],
+          [
+            "午後は、レビューと共有",
+            "仕様確認やレビューを通じて、別の視点に触れます。一人で考える時間と、チームで話す時間の両方を大切にしています。"
+          ]
+        ]
+      },
+      {
+        id: "dialogue",
+        category: "work",
+        title: "「ちょっと相談」が言えるチームって、どうつくる？",
+        description: "先輩と後輩が語る、日々のコミュニケーション。",
+        label: "社員対談",
+        source: "GREEN NOTE / チームストーリー",
+        companyId: "green",
+        image: PHOTO.meeting,
+        tags: ["対談", "チーム", "育成"],
+        pr: false,
+        sections: [
+          [
+            "相談に、完成した答えはいらない",
+            "まだ考えがまとまっていなくても相談できる。そんな関係をつくるために、普段から短い会話や進捗の共有を大切にしています。"
+          ],
+          [
+            "違う立場だから、気づけること",
+            "先輩にも後輩にも、それぞれの視点があります。互いの話を聞くことが、仕事の進めやすさにつながっています。"
+          ]
+        ]
+      },
+      {
+        id: "club",
+        category: "work",
+        title: "部署を越えて、無理なくつながる。社内ランニング部。",
+        description: "走る速さより、自分のペース。任意参加の部活動を紹介。",
+        label: "社内部活",
+        source: "FLOW LAB / 社内活動",
+        companyId: "flow",
+        image: PHOTO.running,
+        tags: ["部活", "交流", "職場の雰囲気"],
+        pr: false,
+        sections: [
+          [
+            "活動の基本情報",
+            "月1回、勤務時間外に開催する任意参加の活動を想定しています。初心者も参加でき、距離やペースは各自の体調に合わせます。"
+          ],
+          [
+            "費用と参加について",
+            "基本の参加費は無料、交通費や大会参加費は各自負担というサンプル設定です。不参加が業務評価に影響しないことも明確にします。"
+          ]
+        ]
+      },
+      {
+        id: "beauty",
+        category: "lifestyle",
+        title: "仕事帰りに、自分のためのサロン時間。",
+        description: "落ち着いた空間で過ごす、美容サービスの紹介。",
+        label: "美容・エステ",
+        source: "余白 BEAUTY",
+        image: PHOTO.care,
+        tags: ["美容", "エステ", "セルフケア"],
+        pr: true,
+        sections: [
+          [
+            "サービスについて",
+            "架空のサロン「余白 BEAUTY」の紹介ページです。本番では施術内容、所要時間、予約方法を掲載します。"
+          ],
+          [
+            "予約前に確認したいこと",
+            "税込料金、追加費用、キャンセル条件、施術を受けられない場合の条件を明示します。施術の効果を保証する表現は使用しません。"
+          ]
+        ]
+      },
+      {
+        id: "fashion",
+        category: "lifestyle",
+        title: "平日にも休日にも。私らしいワードローブ。",
+        description: "着回しやすさと、気分が上がる一着を。",
+        label: "ファッション",
+        source: "DAY EDIT",
+        image: PHOTO.fashion,
+        tags: ["ファッション", "通勤", "小物"],
+        pr: true,
+        sections: [
+          [
+            "毎日に寄り添う服",
+            "架空のブランド「DAY EDIT」の紹介ページです。通勤にも休日にも使える服や小物を紹介する想定です。"
+          ],
+          [
+            "商品情報について",
+            "本番では価格、素材、サイズ、在庫、配送、返品条件を掲載します。このデモでは購入を受け付けていません。"
+          ]
+        ]
+      },
+      {
+        id: "rest",
+        category: "lifestyle",
+        title: "何もしない時間も、予定に入れてみる。",
+        description: "忙しい日の、小さな休息のヒント。",
+        label: "セルフケア",
+        source: "WORK & ME 編集部",
+        image: PHOTO.desk,
+        tags: ["休息", "暮らし", "セルフケア"],
+        pr: false,
+        sections: [
+          [
+            "自分に合う、ひと息のつき方",
+            "休憩の取り方にも、ひとつの正解はありません。短い散歩、飲み物を楽しむ時間、予定を入れない時間。無理なく選べることから試してみましょう。"
+          ]
+        ]
+      }
+    ];
+
+    const COMPANIES = [
+      {
+        id: "green",
+        name: "GREEN NOTE",
+        initials: "GN",
+        title: "対話から、新しい仕事をつくる。",
+        description: "ブランド企画とデザインに取り組むチーム。",
+        image: PHOTO.office,
+        industry: "企画・デザイン",
+        location: "所在地未設定",
+        mission: "対話を通じて課題を見つけ、伝わる企画とデザインをつくる。",
+        culture: "役割を越えてアイデアを共有し、小さく試して振り返ることを大切にする企業として設定しています。",
+        environment: "勤務形態、育成制度、評価制度は本番掲載時に確認し、制度の利用体験と分けて紹介します。",
+        recruitmentUrl: ""
+      },
+      {
+        id: "flow",
+        name: "FLOW LAB",
+        initials: "FL",
+        title: "専門性を育て、チームで前へ。",
+        description: "デジタルサービス開発と、学びを大切にするチーム。",
+        image: PHOTO.meeting,
+        industry: "IT・サービス開発",
+        location: "所在地未設定",
+        mission: "技術と対話で、使う人の毎日を少し便利にする。",
+        culture: "レビューや勉強会を通じて知識を共有し、チームで成長する企業として設定しています。",
+        environment: "実際の労働条件、勤務場所、福利厚生は本番で確認・掲載します。",
+        recruitmentUrl: ""
+      }
+    ];
+
+    const ADS = [
+      {
+        title: "余白 BEAUTY",
+        subtitle: "MAKE TIME FOR YOURSELF",
+        caption: "自分のための、サロン時間。",
+        image: "assets/ad-beauty.jpg",
+        href: "#/article/beauty",
+        alt: "広告：余白 BEAUTY。美容サロンの紹介ページへ",
+        background: "#edf2ef"
+      },
+      {
+        title: "DAY EDIT",
+        subtitle: "STYLE FOR EVERY DAY",
+        caption: "平日も休日も、軽やかに。",
+        image: "assets/ad-fashion.jpg",
+        href: "#/article/fashion",
+        alt: "広告：DAY EDIT。ファッションの紹介ページへ",
+        background: "#f1eee9"
+      },
+      {
+        title: "GREEN NOTE",
+        subtitle: "MEET YOUR NEXT TEAM",
+        caption: "次の仕事を、自分らしく。",
+        image: "assets/ad-company.jpg",
+        href: "#/company/green",
+        alt: "広告：GREEN NOTE。企業紹介ページへ",
+        background: "#eaf1f3"
+      }
+    ];
+
+    const main = document.getElementById("main");
+    const navigation = document.getElementById("navigation");
+    const menuToggle = document.getElementById("menu-toggle");
+
+    function escapeHtml(value) {
+      const characters = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      };
+
+      return String(value).replace(
+        /[&<>"']/g,
+        character => characters[character]
+      );
+    }
+
+    function svgImage(title, subtitle, background = "#edf2f3") {
+      const svg = `
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="600"
+          height="600"
+          viewBox="0 0 600 600"
+        >
+          <rect width="600" height="600" fill="${background}" />
+          <path
+            d="M440 0H600V600H280Z"
+            fill="#ffffff"
+            opacity="0.5"
+          />
+          <text
+            x="45"
+            y="80"
+            font-family="sans-serif"
+            font-size="17"
+            letter-spacing="3"
+            fill="#67777b"
+          >WORK &amp; ME</text>
+          <text
+            x="45"
+            y="290"
+            font-family="sans-serif"
+            font-size="41"
+            font-weight="700"
+            fill="#242b30"
+          >${escapeHtml(title)}</text>
+          <text
+            x="45"
+            y="340"
+            font-family="sans-serif"
+            font-size="15"
+            letter-spacing="2"
+            fill="#67777b"
+          >${escapeHtml(subtitle)}</text>
+          <path d="M45 450H195M175 435L195 450L175 465"
+            fill="none"
+            stroke="#087d90"
+            stroke-width="3"
+          />
+          <text
+            x="45"
+            y="520"
+            font-family="sans-serif"
+            font-size="15"
+            fill="#67777b"
+          >SAMPLE VISUAL</text>
+        </svg>
+      `;
+
+      return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+    }
+
+    function imageMarkup(source, className, eager = false) {
+      return `
+        <img
+          class="${className}"
+          src="${escapeHtml(source)}"
+          alt=""
+          loading="${eager ? "eager" : "lazy"}"
+          decoding="async"
+          data-fallback
+        >
+      `;
+    }
+
+    function installImageFallbacks() {
+      main.querySelectorAll("[data-fallback]").forEach(image => {
+        const replace = () => {
+          image.onerror = null;
+          image.src = svgImage("WORK & ME", "STORIES & LIFESTYLE");
+        };
+
+        image.onerror = replace;
+
+        if (image.complete && image.naturalWidth === 0) {
+          replace();
+        }
+      });
+    }
+
+    function storyCard(story) {
+      return `
+        <article class="card">
+          <a class="card-link" href="#/article/${story.id}">
+            ${imageMarkup(story.image, "card-image")}
+            <div class="card-meta">
+              ${story.pr ? '<span class="pr">PR</span>' : ""}
+              <span>${escapeHtml(story.label)}</span>
+            </div>
+            <h3>${escapeHtml(story.title)}</h3>
+            <p class="card-description">
+              ${escapeHtml(story.description)}
+            </p>
+            <p class="card-source">${escapeHtml(story.source)}</p>
+          </a>
+        </article>
+      `;
+    }
+
+    function companyCard(company) {
+      return `
+        <article class="card">
+          <a class="card-link" href="#/company/${company.id}">
+            ${imageMarkup(company.image, "card-image")}
+            <div class="card-meta">
+              <span class="pr">PR</span>
+              <span>${escapeHtml(company.industry)}</span>
+            </div>
+            <h3>${escapeHtml(company.title)}</h3>
+            <p class="card-description">
+              ${escapeHtml(company.description)}
+            </p>
+            <p class="card-source">${escapeHtml(company.name)}</p>
+          </a>
+        </article>
+      `;
+    }
+
+    function homeSection(category, title) {
+      const content = category === "companies"
+        ? COMPANIES.map(companyCard).join("")
+        : STORIES
+          .filter(story => story.category === category)
+          .slice(0, 3)
+          .map(storyCard)
+          .join("");
+
+      return `
+        <section class="section">
+          <div class="section-heading">
+            <h2>${escapeHtml(title)}</h2>
+            <a href="#/${category}">すべて見る →</a>
+          </div>
+          <div class="grid">${content}</div>
+        </section>
+      `;
+    }
+
+    function renderHome() {
+      const featured = STORIES[0];
+
+      return `
+        <div class="intro">
+          <p class="eyebrow">WORK STORIES & LIFESTYLE</p>
+          <h1>働く私に、次のきっかけを。</h1>
+          <p>仕事も暮らしも、自分らしく選ぶためのストーリー。</p>
+        </div>
+
+        <a class="feature" href="#/article/${featured.id}">
+          ${imageMarkup(featured.image, "feature-image", true)}
+          <div class="feature-copy">
+            <span class="eyebrow">FEATURED STORY</span>
+            <h2>${escapeHtml(featured.title)}</h2>
+            <p>${escapeHtml(featured.description)}</p>
+            <span class="arrow-link">インタビューを読む</span>
+          </div>
+        </a>
+
+        <nav class="topics" aria-label="テーマから探す">
+          <a href="#/people?q=キャリア"># キャリアを考える</a>
+          <a href="#/people?q=仕事の一日"># 仕事の一日</a>
+          <a href="#/work?q=チーム"># 職場の雰囲気</a>
+          <a href="#/work?q=部活"># 社内部活</a>
+          <a href="#/lifestyle?q=セルフケア"># 自分のための時間</a>
+        </nav>
+
+        ${homeSection("people", "働く女性のストーリー")}
+        ${homeSection("work", "チームと会社の日常")}
+        ${homeSection("companies", "想いから、会社を知る")}
+        ${homeSection("lifestyle", "自分を楽しむ")}
+      `;
+    }
+
+    function renderListing(category, query) {
+      const information = CATEGORIES[category];
+
+      return `
+        <div class="intro">
+          <p class="eyebrow">${information.english}</p>
+          <h1>${information.name}</h1>
+          <p>${information.description}</p>
+        </div>
+
+        <div class="search">
+          <label for="search-input">
+            ${category === "companies"
+              ? "会社名・業種で検索"
+              : "キーワードで検索"
+            }
+          </label>
+          <input
+            id="search-input"
+            type="search"
+            value="${escapeHtml(query)}"
+            placeholder="気になる言葉を入力"
+            autocomplete="off"
+          >
+        </div>
+
+        <p class="search-result" id="search-result" aria-live="polite"></p>
+        <div class="grid" id="result-grid"></div>
+      `;
+    }
+
+    function updateListing(category, query) {
+      const keyword = query.trim().normalize("NFKC").toLowerCase();
+      let results;
+
+      if (category === "companies") {
+        results = COMPANIES.filter(company => {
+          const text = [
+            company.name,
+            company.title,
+            company.description,
+            company.industry
+          ].join(" ").normalize("NFKC").toLowerCase();
+
+          return text.includes(keyword);
+        });
+
+        document.getElementById("result-grid").innerHTML =
+          results.map(companyCard).join("");
+      } else {
+        results = STORIES.filter(story => {
+          const text = [
+            story.title,
+            story.description,
+            story.source,
+            ...story.tags
+          ].join(" ").normalize("NFKC").toLowerCase();
+
+          return story.category === category && text.includes(keyword);
+        });
+
+        document.getElementById("result-grid").innerHTML =
+          results.map(storyCard).join("");
+      }
+
+      document.getElementById("search-result").textContent =
+        results.length
+          ? `${results.length}件見つかりました。`
+          : "該当する情報がありません。別のキーワードでお試しください。";
+
+      installImageFallbacks();
+    }
+
+    function renderStory(story) {
+      const related = STORIES.filter(item =>
+        item.category === story.category && item.id !== story.id
+      ).slice(0, 3);
+
+      const company = COMPANIES.find(item => item.id === story.companyId);
+
+      return `
+        <nav class="breadcrumb" aria-label="パンくず">
+          <a href="#/">トップ</a>
+          <span> / </span>
+          <a href="#/${story.category}">
+            ${CATEGORIES[story.category].name}
+          </a>
+        </nav>
+
+        <article>
+          <header class="article-header">
+            <p class="eyebrow">${escapeHtml(story.label)}</p>
+            ${story.pr ? '<p><span class="pr">PR / 広告</span></p>' : ""}
+            <h1>${escapeHtml(story.title)}</h1>
+            <p class="article-lead">${escapeHtml(story.description)}</p>
+            <p class="caption">
+              ${escapeHtml(story.source)} / 公開日・更新日：未設定
+            </p>
+          </header>
+
+          ${imageMarkup(story.image, "article-cover", true)}
+          <p class="caption">
+            イメージ写真。写真の人物・施設は記事の取材対象ではありません。
+          </p>
+
+          <div class="article-body">
+            <aside class="notice">
+              構成確認用のサンプル記事です。
+              企業・人物・サービスは架空で、求人応募や予約は受け付けていません。
+            </aside>
+
+            ${story.sections.map(([heading, text]) => `
+              <section>
+                <h2>${escapeHtml(heading)}</h2>
+                <p>${escapeHtml(text)}</p>
+              </section>
+            `).join("")}
+
+            ${company ? `
+              <section>
+                <h2>このストーリーの会社</h2>
+                <p>${escapeHtml(company.name)}</p>
+                <a class="button" href="#/company/${company.id}">
+                  企業紹介を見る（PR）
+                </a>
+              </section>
+            ` : ""}
+
+            <nav class="topics" aria-label="この記事のテーマ">
+              ${story.tags.map(tag => `
+                <a href="#/${story.category}?q=${encodeURIComponent(tag)}">
+                  # ${escapeHtml(tag)}
+                </a>
+              `).join("")}
+            </nav>
+          </div>
+        </article>
+
+        ${related.length ? `
+          <section class="section">
+            <div class="section-heading">
+              <h2>あわせて読みたい</h2>
+            </div>
+            <div class="grid">${related.map(storyCard).join("")}</div>
+          </section>
+        ` : ""}
+      `;
+    }
+
+    function safeLink(value) {
+      if (!value) {
+        return "";
+      }
+
+      try {
+        const url = new URL(value);
+
+        return ["https:", "http:"].includes(url.protocol)
+          ? url.href
+          : "";
+      } catch {
+        return "";
+      }
+    }
+
+    function renderCompany(company) {
+      const stories = STORIES.filter(story =>
+        story.companyId === company.id
+      );
+      const recruitmentUrl = safeLink(company.recruitmentUrl);
+
+      return `
+        <nav class="breadcrumb" aria-label="パンくず">
+          <a href="#/">トップ</a>
+          <span> / </span>
+          <a href="#/companies">会社を知る</a>
+        </nav>
+
+        <article>
+          <span class="pr">PR / 企業紹介</span>
+          ${imageMarkup(company.image, "article-cover", true)}
+          <p class="caption">職場のイメージ写真です。</p>
+
+          <div class="company-logo" aria-hidden="true">
+            ${escapeHtml(company.initials)}
+          </div>
+
+          <div class="intro">
+            <p class="eyebrow">${escapeHtml(company.name)}</p>
+            <h1>${escapeHtml(company.title)}</h1>
+            <p>${escapeHtml(company.description)}</p>
+          </div>
+
+          <p class="notice">
+            架空の企業のサンプルページです。
+            制度・労働条件・採用情報は実在企業の情報ではありません。
+            更新日は未設定です。
+          </p>
+
+          <div class="article-body">
+            <section>
+              <h2>私たちの想い</h2>
+              <p>${escapeHtml(company.mission)}</p>
+            </section>
+
+            <section>
+              <h2>チームの文化</h2>
+              <p>${escapeHtml(company.culture)}</p>
+            </section>
+
+            <section>
+              <h2>働く環境</h2>
+              <p>${escapeHtml(company.environment)}</p>
+            </section>
+
+            <section>
+              <h2>会社概要</h2>
+              <dl class="info">
+                <div>
+                  <dt>会社名</dt>
+                  <dd>${escapeHtml(company.name)}（架空）</dd>
+                </div>
+                <div>
+                  <dt>業種</dt>
+                  <dd>${escapeHtml(company.industry)}</dd>
+                </div>
+                <div>
+                  <dt>所在地</dt>
+                  <dd>${escapeHtml(company.location)}</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section>
+              <h2>採用情報</h2>
+              ${recruitmentUrl ? `
+                <a
+                  class="button"
+                  href="${escapeHtml(recruitmentUrl)}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  公式採用ページを見る（新しいタブ）
+                </a>
+              ` : `
+                <p>
+                  このデモには募集情報を掲載していません。
+                  本番では確認済みの公式採用ページへ案内します。
+                </p>
+              `}
+            </section>
+          </div>
+        </article>
+
+        <section class="section">
+          <div class="section-heading">
+            <h2>この会社のストーリー</h2>
+          </div>
+          <div class="grid">${stories.map(storyCard).join("")}</div>
+        </section>
+      `;
+    }
+
+    function renderStatic(page) {
+      const pages = {
+        about: {
+          title: "運営会社",
+          english: "ABOUT US",
+          description: "働く人の選択肢を、ストーリーと情報で広げる。",
+          body: `
+            <p class="notice">
+              会社情報は未設定です。
+              公開前に、実際の法人情報へ差し替えてください。
+            </p>
+
+            <dl class="info">
+              <div>
+                <dt>会社名</dt>
+                <dd>運営法人名を掲載</dd>
+              </div>
+              <div>
+                <dt>所在地</dt>
+                <dd>所在地を掲載</dd>
+              </div>
+              <div>
+                <dt>代表者</dt>
+                <dd>代表者名を掲載</dd>
+              </div>
+              <div>
+                <dt>事業内容</dt>
+                <dd>
+                  ウェブメディア運営、取材・記事制作、
+                  採用広報支援、広告企画
+                </dd>
+              </div>
+              <div>
+                <dt>問い合わせ</dt>
+                <dd>実際の問い合わせ先を掲載</dd>
+              </div>
+            </dl>
+
+            <h2>私たちが目指すこと</h2>
+            <p>
+              働き方や暮らし方に、ひとつの正解を置かないこと。
+              多様な経験を届け、読者が自分で選ぶための材料をつくります。
+            </p>
+            <a class="arrow-link" href="#/editorial">編集部について</a>
+          `
+        },
+
+        editorial: {
+          title: "編集部について",
+          english: "EDITORIAL",
+          description: "結果だけでなく、その途中にある声を届けます。",
+          body: `
+            <h2>編集方針</h2>
+            <ul>
+              <li>成功だけでなく、迷い・失敗・工夫も紹介します。</li>
+              <li>特定の働き方や暮らし方を押しつけません。</li>
+              <li>企業の制度説明と、社員の体験談を区別します。</li>
+              <li>写真や発言は、掲載範囲について同意を得て使用します。</li>
+              <li>誤りの訂正や、退職・異動に伴う見直しに対応します。</li>
+            </ul>
+
+            <h2>編集部メンバー</h2>
+            <p class="caption">
+              以下は役割のサンプルです。氏名・プロフィールは未設定です。
+            </p>
+
+            <div class="member-grid">
+              <section class="member">
+                <h3>編集長</h3>
+                <p>メディアの企画と編集方針、記事の品質管理を担当。</p>
+              </section>
+              <section class="member">
+                <h3>編集・ライター</h3>
+                <p>取材と執筆を通じて、一人ひとりの経験を言葉に。</p>
+              </section>
+              <section class="member">
+                <h3>撮影・デザイン</h3>
+                <p>人物や職場の空気が伝わる、自然な表現を担当。</p>
+              </section>
+            </div>
+
+            <h2>広告掲載について</h2>
+            <p>
+              有料掲載、商品提供、タイアップ記事は、
+              一覧と本文の両方で「広告」または「PR」と明示します。
+              有料掲載を編集部の独立した推薦や人気順位に見せません。
+            </p>
+
+            <h2>情報の訂正・掲載に関するご相談</h2>
+            <p>
+              本番公開時に専用窓口を設けます。
+              誤情報、写真・発言の利用、記事の更新について対応します。
+            </p>
+
+            <a class="arrow-link" href="#/contact">お問い合わせについて</a>
+          `
+        },
+
+        contact: {
+          title: "掲載・広告のお問い合わせ",
+          english: "PARTNERSHIP",
+          description: "企業の想いと、働く人の声を届けるお手伝い。",
+          body: `
+            <h2>掲載メニュー</h2>
+            <ul>
+              <li>女性社員インタビュー・社員対談</li>
+              <li>企業紹介・採用広報ページ</li>
+              <li>美容・ファッションのタイアップ記事</li>
+              <li>正方形画像広告</li>
+            </ul>
+
+            <h2>画像広告の仕様</h2>
+            <dl class="info">
+              <div>
+                <dt>推奨サイズ</dt>
+                <dd>600 × 600ピクセル</dd>
+              </div>
+              <div>
+                <dt>画像形式</dt>
+                <dd>WebP、JPEG、PNG</dd>
+              </div>
+              <div>
+                <dt>表示位置</dt>
+                <dd>パソコン：右側 / スマートフォン：本文下</dd>
+              </div>
+              <div>
+                <dt>切り替え</dt>
+                <dd>6秒ごと。停止・再開と手動切り替えが可能。</dd>
+              </div>
+            </dl>
+
+            <p class="notice">
+              問い合わせ送信機能は未実装です。
+              本番では送信処理、迷惑投稿対策、
+              個人情報の取り扱いへの同意を実装してください。
+            </p>
+          `
+        },
+
+        privacy: {
+          title: "プライバシーについて",
+          english: "PRIVACY",
+          description: "公開前の確認事項。",
+          body: `
+            <p class="notice">
+              正式なプライバシーポリシーではありません。
+              実際の運用に合わせた規定へ差し替えてください。
+            </p>
+
+            <h2>このデモの情報取得</h2>
+            <p>
+              検索語はブラウザ内で処理します。
+              問い合わせ送信、会員登録、
+              アクセス解析、広告クリックの記録は実装していません。
+            </p>
+
+            <h2>外部画像の読み込み</h2>
+            <p>
+              サンプル写真を外部サービスから読み込むため、
+              画像取得時にIPアドレスなどの通信情報が外部へ送信されます。
+              本番では許諾済み画像を自社管理の配信先に置く方法も検討してください。
+            </p>
+
+            <h2>本番で定める事項</h2>
+            <ul>
+              <li>運営者と問い合わせ先</li>
+              <li>取得する情報、利用目的、保存期間</li>
+              <li>委託先・第三者提供の有無</li>
+              <li>Cookie、解析、広告サービスの利用</li>
+              <li>開示・訂正・削除などへの対応</li>
+            </ul>
+          `
+        }
+      };
+
+      return pages[page];
+    }
+
+    function notFound() {
+      return `
+        <div class="intro">
+          <p class="eyebrow">NOT FOUND</p>
+          <h1>ページが見つかりません</h1>
+          <p>リンク先が変更された可能性があります。</p>
+        </div>
+        <a class="button" href="#/">トップへ戻る</a>
+      `;
+    }
+
+    let initialized = false;
+
+    function closeMenu() {
+      navigation.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "メニュー";
+    }
+
+    function renderRoute() {
+      const routeText = location.hash.startsWith("#/")
+        ? location.hash.slice(1)
+        : "/";
+
+      const separator = routeText.indexOf("?");
+      const path = separator === -1
+        ? routeText
+        : routeText.slice(0, separator);
+      const query = separator === -1
+        ? ""
+        : routeText.slice(separator + 1);
+
+      const parameters = new URLSearchParams(query);
+      const segments = path.split("/").filter(Boolean);
+      const route = segments[0] || "home";
+
+      let title = "働く私に、次のきっかけを。";
+      let activeCategory = route;
+
+      if (route === "home") {
+        main.innerHTML = renderHome();
+      } else if (CATEGORIES[route]) {
+        const keyword = parameters.get("q") || "";
+        title = CATEGORIES[route].name;
+        main.innerHTML = renderListing(route, keyword);
+        updateListing(route, keyword);
+
+        document.getElementById("search-input")
+          .addEventListener("input", event => {
+            updateListing(route, event.target.value);
+          });
+      } else if (route === "article") {
+        const story = STORIES.find(item => item.id === segments[1]);
+
+        title = story ? story.title : "ページが見つかりません";
+        activeCategory = story ? story.category : "";
+        main.innerHTML = story ? renderStory(story) : notFound();
+      } else if (route === "company") {
+        const company = COMPANIES.find(item => item.id === segments[1]);
+
+        title = company ? company.name : "ページが見つかりません";
+        activeCategory = "companies";
+        main.innerHTML = company ? renderCompany(company) : notFound();
+      } else {
+        const page = renderStatic(route);
+
+        if (page) {
+          title = page.title;
+          main.innerHTML = `
+            <article>
+              <div class="intro">
+                <p class="eyebrow">${page.english}</p>
+                <h1>${page.title}</h1>
+                <p>${page.description}</p>
+              </div>
+              <div class="article-body">${page.body}</div>
+            </article>
+          `;
+        } else {
+          title = "ページが見つかりません";
+          main.innerHTML = notFound();
+        }
+      }
+
+      document.title = `${title}｜WORK & ME`;
+
+      navigation.querySelectorAll("a").forEach(link => {
+        if (link.getAttribute("href") === `#/${activeCategory}`) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+
+      closeMenu();
+      installImageFallbacks();
+
+      if (initialized) {
+        main.focus({ preventScroll: true });
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+
+      initialized = true;
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const open = navigation.classList.toggle("is-open");
+
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.textContent = open ? "閉じる" : "メニュー";
+    });
+
+    document.addEventListener("keydown", event => {
+      if (
+        event.key === "Escape" &&
+        navigation.classList.contains("is-open")
+      ) {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+
+    /*
+     * 画像広告:
+     * ADS の image と href を差し替えて設定します。
+     * 画像ファイルがない場合はサンプル画像を自動生成します。
+     * リンク先にはサイト内ページまたは http / https を指定できます。
+     */
+
+    const adRail = document.querySelector(".rail");
+    const adLink = document.getElementById("ad-link");
+    const adImage = document.getElementById("ad-image");
+    const adCaption = document.getElementById("ad-caption");
+    const adCount = document.getElementById("ad-count");
+    const adToggle = document.getElementById("ad-toggle");
+    const adNext = document.getElementById("ad-next");
+    const motionPreference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+
+    let adIndex = 0;
+    let adTimer = null;
+    let adPaused = motionPreference.matches;
+    let pointerInside = false;
+
+    function advertisementHref(value) {
+      return value.startsWith("#/") ? value : safeLink(value);
+    }
+
+    function showAd() {
+      const ad = ADS[adIndex];
+      const href = advertisementHref(ad.href);
+
+      if (href) {
+        adLink.href = href;
+      } else {
+        adLink.removeAttribute("href");
+      }
+
+      adImage.alt = ad.alt;
+      adImage.onerror = () => {
+        adImage.onerror = null;
+        adImage.src = svgImage(
+          ad.title,
+          ad.subtitle,
+          ad.background
+        );
+      };
+
+      adImage.src = ad.image || svgImage(
+        ad.title,
+        ad.subtitle,
+        ad.background
+      );
+
+      adCaption.textContent = ad.caption;
+      adCount.textContent = `${adIndex + 1} / ${ADS.length}`;
+    }
+
+    function nextAd() {
+      adIndex = (adIndex + 1) % ADS.length;
+      showAd();
+    }
+
+    function synchronizeAdTimer() {
+      window.clearInterval(adTimer);
+      adTimer = null;
+
+      adToggle.textContent = adPaused ? "再開" : "停止";
+      adToggle.setAttribute(
+        "aria-label",
+        adPaused
+          ? "広告の自動切り替えを再開"
+          : "広告の自動切り替えを停止"
+      );
+
+      const focused = adRail.contains(document.activeElement);
+
+      if (
+        adPaused ||
+        pointerInside ||
+        focused ||
+        document.hidden ||
+        ADS.length < 2
+      ) {
+        return;
+      }
+
+      adTimer = window.setInterval(nextAd, 6000);
+    }
+
+    adToggle.addEventListener("click", () => {
+      adPaused = !adPaused;
+      synchronizeAdTimer();
+    });
+
+    adNext.addEventListener("click", () => {
+      nextAd();
+      synchronizeAdTimer();
+    });
+
+    adRail.addEventListener("mouseenter", () => {
+      pointerInside = true;
+      synchronizeAdTimer();
+    });
+
+    adRail.addEventListener("mouseleave", () => {
+      pointerInside = false;
+      synchronizeAdTimer();
+    });
+
+    adRail.addEventListener("focusin", synchronizeAdTimer);
+
+    adRail.addEventListener("focusout", () => {
+      window.setTimeout(synchronizeAdTimer, 0);
+    });
+
+    document.addEventListener(
+      "visibilitychange",
+      synchronizeAdTimer
+    );
+
+    motionPreference.addEventListener("change", event => {
+      if (event.matches) {
+        adPaused = true;
+      }
+
+      synchronizeAdTimer();
+    });
+
+    window.addEventListener("hashchange", renderRoute);
+
+    renderRoute();
+
+    if (ADS.length > 0) {
+      showAd();
+      synchronizeAdTimer();
+    } else {
+      adRail.hidden = true;
+    }
+  </script>
+</body>
+</html>
