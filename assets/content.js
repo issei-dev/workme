@@ -357,7 +357,7 @@ window.WORK_ME_CONTENT = {
       note: "サービス内容は提供原稿に基づく掲載案です。体づくりや運動による変化には個人差があり、結果を保証するものではありません。",
       thumbnail: "assets/images/purefit-thumbnail.jpg",
       hero: "assets/images/ad/purefit-hero.PNG",
-      ad: "assets/images/purefit-ad.PNG",
+      ad: "assets/images/ad/purefit-ad.PNG",
       accent: "#52695c",
       background: "#f1f5ef",
       adCaption: "自宅から始める、私の運動習慣。",
